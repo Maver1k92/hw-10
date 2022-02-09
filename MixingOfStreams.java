@@ -10,7 +10,7 @@ public class MixingOfStreams {
         Stream<String> second = Stream.of("Tank", "DD", "Support", " Hybrid");
         Stream<String> result = zip(first,second);
 
-        result.peek(System.out::println).collect(Collectors.toList());
+        result.forEach(System.out::println);
     }
 
     public static <T> Stream<T> zip(Stream<T> first, Stream<T> second){
