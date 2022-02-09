@@ -24,7 +24,7 @@ public class ReverceNamesInUpper {
                 .map(String:: toUpperCase)//Преобразовую в верхний регистр
                 .sorted(reverseOrder())// Разворачиваю в обратном порядке
                 .collect(Collectors.toList());
-        System.out.println(reverceUserNames);// Вывожу список имен в обратном порядке
+        reverceUserNames.forEach(System.out::println);// Вывожу список имен в обратном порядке
 
 
 
