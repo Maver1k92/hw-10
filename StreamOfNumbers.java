@@ -9,7 +9,7 @@ public class StreamOfNumbers {
 
     //создание метода который возвращает стрим лонгов и принимает a,c,m, seed;
     public static Stream<Long> randomaizerOfNumbers(long a, long c, long m, long seed ){
-       return Stream.iterate(seed,x -> 1*(((a*x)+ c) % m));
+       return Stream.iterate(seed,x -> (((a * x) + c) % m));
               // .limit(10);// для проверки того что генерю раскоментить и убрать ;  в 12 строке
     }
 }
