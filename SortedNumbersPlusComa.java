@@ -26,11 +26,8 @@ public class SortedNumbersPlusComa {
 
     //метод для конвертации Массива в Лист
     private static List<String> getNumbers(String[] numbers) {
-        List<String> result = new ArrayList<>();//
+        List<String> result;//
         result = Arrays.asList(numbers);
-        List<String> numbersList = new ArrayList<>();
-        for (String number : result) {
-        }
         return result;
     }
 }
