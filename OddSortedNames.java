@@ -24,7 +24,7 @@ public class OddSortedNames {
         System.out.println(userOddIndex);//вывожу в консоль список нечетных юзеров
 
         String oddUsers = userOddIndex.toString();
-        String parsed = oddUsers.substring(1, oddUsers.length() -1).replace(",", ",");
+        String parsed = oddUsers.substring(1, oddUsers.length() -1);
         System.out.println(parsed);// вывожу в консоль строку из юзеров как сказано в ТЗ
 
 
